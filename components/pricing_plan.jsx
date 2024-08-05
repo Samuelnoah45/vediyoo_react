@@ -37,7 +37,7 @@ const PricingPackage = () => {
             : 'border-[#9c9c9c86]'
         }`}
       >
-        <h4 className="text-xl absolute -top-4 left-[40%] px-4 bg-white border-gray-200 border-2 rounded-md">Basic</h4>
+        <h4 className={`text-xl absolute -top-4 left-[40%] px-4 bg-white  border-2 rounded-md ${ activeCard == number ? 'border-primary-400' : 'border-gray-200'}`}>Basic</h4>
         <img src="/assets/images/questionnaire.png"></img>
         <h2 className={ `text-[38px] font-extrabold  ${activeCard === number ? 'text-primary-400' : ''}`}>Br 9,999</h2>
         <h4 className="text-xl">Per Month</h4>

@@ -31,7 +31,7 @@ const PricingPackage = () => {
         <div
           
         onMouseOver={() => setActiveCard(number)}
-        className={`rounded-md  border-2 bg-white text-[#515151] shadow-md relative flex justify-center gap-4 flex-col items-center p-8 px-16 ${
+        className={`rounded-md  border-2 bg-white text-[#515151] shadow-md relative flex justify-center gap-2 flex-col items-center p-4 px-16 ${
           activeCard === number
             ? 'border-primary-400  shadow-xl'
             : 'border-[#9c9c9c86]'
@@ -46,13 +46,13 @@ const PricingPackage = () => {
           <ul className="text-lg flex flex-col gap-2">
             {[...Array(5)].map((_, i) => (
               <li key={i} className="flex items-center gap-2">
-                <Icon className="text-2xl" icon="material-symbols:check-box-outline" />
+                <Icon className="text-base" icon="entypo:check" />
                 7 short video (&lt;1 min)
               </li>
             ))}
           </ul>
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center py-2">
           <Link href="/about">
             <div
               className={`font-bold text-white px-16 py-4 rounded-full font-poppins ${

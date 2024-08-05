@@ -1,0 +1,14 @@
+#processCard {
+    /* transition: height 400ms ease-in-out; */
+    transition: height 400ms ease-in-out, background-color 400ms ease-in-out,
+      color 400ms ease-in-out, transform 400ms ease-in-out,
+      margin 400ms ease-in-out scale 400ms ease-in-out;
+
+  }
+  
+  .li {
+    list-style-type: none;
+  }
+  .cardMain {
+    transition: gap 400ms ease-in-out;
+  }

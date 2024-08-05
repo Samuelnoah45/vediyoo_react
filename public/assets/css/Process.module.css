@@ -1,0 +1,5 @@
+.processCard {
+  /* transition: height 400ms ease-in-out; */
+  transition: height 400ms ease-in-out, background-color 400ms ease-in-out,
+    color 400ms ease-in-out;
+}

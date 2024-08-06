@@ -3,7 +3,7 @@ import Link from 'next/link';
 const   NavBar = () => {
 
     return (
-        <div className="flex items-center justify-between px-[200px] py-8">
+        <div className="flex items-center justify-between 2xl:px-[200px] px-[80px]  py-8">
         <div>
             <img src="/assets/images/Logo.png" alt="Logo" />
         </div>

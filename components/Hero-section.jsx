@@ -5,10 +5,10 @@ import style from '../public/assets/css/Hero.module.css';
 
 const HeroSection = () => {
   return (
-    <div className={`flex px-[200px] items-center justify-center gap-x-10 h-[85%] ${style.bgImage}`}>
+    <div className={`flex  2xl:px-[200px] px-[80px] items-center justify-center gap-x-10 h-[85%] ${style.bgImage}`}>
        
       <div className="w-full space-y-8">
-        <p className="text-black text-[65px] font-poppins mt-4 font-extrabold leading-normal">
+        <p className="text-black 2xl:text-[65px] text-[56px] font-poppins mt-4 font-extrabold leading-normal">
           Turn Videos Into Millions With Our Editing Magic
         </p>
         <p className="text-xl">

@@ -6,6 +6,7 @@ import  ProcessSteps from "../components/Process-steps";
 import  ExampleVideos from "../components/ExampleVideosSection";
 import  VideoSection from "../components/Video_section";
 import  PricingPlan from "../components/pricing_plan";
+import  ViralVideos from "../components/viral_videos";
 export default function Home() {
   return (
     <div className="">
@@ -17,19 +18,19 @@ export default function Home() {
         
       />
       <img
-        className="absolute top-[40%] left-[100px]"
+        className="absolute 2xl:top-[40%] top-[52%] left-[100px] w-[40px] 2xl:w-auto"
         src="/assets/images/circle.svg"
         alt=""
         
       />
       <img
-        className="absolute top-[110px] left-[15%]"
+        className="absolute 2xl:top-[110px] left-[15%] top-[80px] w-[60px] 2xl:w-auto"
         src="/assets/images/cracked_circle.svg"
         alt=""
         
       />
       <img
-        className="absolute top-[150px] left-[40%] w-[60px]"
+        className="absolute top-[150px] 2xl:left-[40%] left-[45%] 2xl:w-[60px] w-[50px]"
         src="/assets/images/radio_shape.svg"
         alt=""
         
@@ -43,7 +44,7 @@ export default function Home() {
     <ExampleVideos />
     <VideoSection />
     <PricingPlan />
-    {/* <ViralVideos /> */}
+    <ViralVideos />
   </div>
   );
 }

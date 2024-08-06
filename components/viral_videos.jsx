@@ -11,7 +11,7 @@ const PricingPackage = () => {
   return (
     <div>
 
-      <div className="py-24 space-y-10 px-[200px] font-poppins bg-[#FDFBF7]">
+      <div className="py-24 space-y-10 px-[300px] font-poppins bg-[#FDFBF7]">
         <div className="w-full flex gap-4 flex-col  items-center">
 
           <p className="text-[40px] font-extrabold">
@@ -57,9 +57,7 @@ const PricingPackage = () => {
             <p className='px-4'>
             We’ll help your products sell with our proven direct response video creatives with our proven direct response video creatives with our proven direct response video creatives
             </p>
-
           </div>
-        
       )
           }
 

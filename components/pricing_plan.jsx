@@ -22,7 +22,7 @@ const PricingPackage = () => {
         </div>
         <div
           onMouseLeave={() => setActiveCard(2)}
-          className={`flex p-10 gap-4 justify-center font-poppins py-10 items-center influencer-card`}
+          className={`flex p-10 gap-8 justify-center flex-wrap  font-poppins py-10 items-center influencer-card`}
         >
           {numbers.map((number) => (
             <div className="rounded-[12px]   relative shadow-md">

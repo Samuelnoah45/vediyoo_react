@@ -44,7 +44,7 @@ const InfluencersSection = () => {
   const [ActiveCard, setActiveCard] = useState(influencers.length - 1);
 
   return (
-    <div className="py-16 font-poppins bg-[#FDFBF7]">
+    <div className="py-16 font-poppins 2xl:px-0 lg:px-[50px] bg-[#FDFBF7]">
       <div className="w-full flex gap-2 flex-col items-center">
         <p className="text-[40px] font-extrabold">
           Hire Our Brand <span className="text-primary-400">Influencers</span>
@@ -84,14 +84,16 @@ const InfluencersSection = () => {
                     className="text-white text-xl"
                     icon="octicon:location-24"
                   />
-                  <p className="text-[16px]">{influencer.location}</p>
+                  <p className="2xl:text-[16px] lg:text-[13px]">
+                    {influencer.location}
+                  </p>
                 </div>
                 <div className="flex items-center gap-2">
                   <Icon
                     className="text-white text-xl"
                     icon="hugeicons:instagram"
                   />
-                  <p className="text-[16px]">
+                  <p className="2xl:text-[16px] lg:text-[13px]">
                     {influencer.igFollowers} followers
                   </p>
                 </div>
@@ -100,7 +102,7 @@ const InfluencersSection = () => {
                     className="text-white text-xl"
                     icon="ic:outline-tiktok"
                   />
-                  <p className="text-[16px]">
+                  <p className="2xl:text-[16px] lg:text-[13px]">
                     {influencer.tiktokFollowers} followers
                   </p>
                 </div>

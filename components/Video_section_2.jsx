@@ -5,9 +5,9 @@ import { Icon } from "@iconify/react";
 
 const VideoSection = () => {
   return (
-    <div className="flex flex-row-reverse px-[100px] bg-[#FDFBF7] py-8 items-center justify-center gap-x-8 h-[85%]">
+    <div className="flex flex-row-reverse 2xl:px-[100px] lg:px-[80px] bg-[#FDFBF7] py-8 items-center justify-center gap-x-8 h-[85%]">
       <div className="w-full flex flex-col items-center space-y-10">
-        <p className="text-black text-[50px] font-poppins mt-4 font-semibold leading-normal">
+        <p className="text-black 2xl:text-[50px] lg:text-[35px] font-poppins mt-4 font-semibold leading-normal">
           If you’re ready to increase sales and promote your company, then this
           is for you!
         </p>

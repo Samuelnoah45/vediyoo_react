@@ -6,7 +6,7 @@ import { Tabs, Tab, Card, CardBody } from "@nextui-org/react";
 
 const ExampleVideos = () => {
   return (
-    <div className="flex w-full items-center flex-col py-4 px-[200px] font-poppins bg-[#FDFBF7]">
+    <div className="flex w-full items-center flex-col py-4 2xl:px-[200px] lg:px-[80px] font-poppins bg-[#FDFBF7]">
       <div className="w-full flex gap-4 flex-col py-16 items-center">
         <p className="text-[40px] font-extrabold">
           Example <span className="text-primary-400">Videos </span>
@@ -20,12 +20,12 @@ const ExampleVideos = () => {
         // variant="underlined"
         classNames={{
           tabList: "gap-16 justify-center w-full bg-lily-white-100",
-          tab: "max-w-fit px-0 h-12 text-[#555555]",
+          tab: "px-0 h-12 text-[#555555]",
           tabContent:
             "text-lg font-poppins p-4 group-data-[selected=true]:text-white",
         }}
       >
-        <Tab className="" key="Classic Examples" title="Classic Examples">
+        <Tab className="w-full" key="Classic Examples" title="Classic Examples">
           <div class="py-10 grid grid-cols-3 gap-6">
             <img
               class="rounded-md"

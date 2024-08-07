@@ -21,14 +21,14 @@ const PricingPackage = () => {
       </div>
       <div
         onMouseLeave={() => setActiveCard(2)}
-        className={`flex p-10 justify-center font-poppins py-10 items-center influencer-card ${
+        className={`grid grid-cols-3 p-10 justify-center   bg-black font-poppins py-10 items-center influencer-card ${
           activeCard !== 2 ? "gap-4" : "gap-0"
         } ${styles.cardMain}`}
       >
         <div
           id={styles.processCard}
           onMouseOver={() => setActiveCard(1)}
-          className={`rounded-md overflow-clip relative flex justify-center gap-6 flex-col items-center p-14 ${
+          className={`rounded-md overflow-clip  relative flex justify-center gap-6 flex-col items-center p-14 ${
             activeCard === 1
               ? "bg-primary-400 text-white z-50 scale-110 shadow-xl"
               : "bg-white text-[#515151] shadow-md"

@@ -10,7 +10,7 @@ const PricingPackage = () => {
 
   return (
     <div>
-      <div className="space-y-10 px-[300px] font-poppins bg-[#FDFBF7]">
+      <div className="space-y-10 px-[300px] lg:px-[80px] font-poppins bg-[#FDFBF7]">
         <div className="w-full flex gap-4 flex-col  items-center">
           <p className="text-[40px] font-extrabold">
             Read Our <span className="text-primary-400">Blog</span>

@@ -19,7 +19,7 @@ const ExampleVideos = () => {
         color="secondary"
         // variant="underlined"
         classNames={{
-          tabList: "gap-16 justify-center w-full bg-[#FDFBF7]",
+          tabList: "gap-16 justify-center w-full bg-lily-white-100",
           tab: "max-w-fit px-0 h-12 text-[#555555]",
           tabContent:
             "text-lg font-poppins p-4 group-data-[selected=true]:text-white",

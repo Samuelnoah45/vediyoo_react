@@ -1,5 +1,6 @@
 // components/InfluencersSection.jsx
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Icon } from "@iconify/react";
@@ -40,6 +41,7 @@ const InfluencersSection = () => {
       imgSrc: sampleFour,
     },
   ];
+  const [ActiveCard, setActiveCard] = useState(influencers.length - 1);
 
   return (
     <div className="py-24 font-poppins bg-[#FDFBF7]">
@@ -54,6 +56,8 @@ const InfluencersSection = () => {
       <div className={`flex justify-center py-10 gap-4 influencer-card `}>
         {influencers.map((influencer, index) => (
           <div
+            onMouseOver={() => setActiveCard(index)}
+            onMouseLeave={() => setActiveCard(influencers.length)}
             key={index}
             className="rounded-md overflow-hidden relative w-[320px] h-[410px]"
           >
@@ -63,7 +67,9 @@ const InfluencersSection = () => {
               alt={influencer.name}
             />
             <div
-              className={`absolute overflow-hidden bottom-0 w-full p-4  text-white ${style.fadeBg}`}
+              className={`absolute overflow-hidden bottom-0 w-full p-4  text-white ${
+                style.fadeBg
+              } ${ActiveCard == index ? "h-[115px]" : "h-[53px]"}`}
             >
               <div className="flex items-center gap-[10px]">
                 <p className="text-[18px] font-extrabold">{influencer.name}</p>

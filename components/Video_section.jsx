@@ -5,7 +5,7 @@ import { Icon } from "@iconify/react";
 
 const VideoSection = () => {
   return (
-    <div className="flex flex-row-reverse px-[100px] bg-[#FDFBF7] py-24 items-center justify-center gap-x-10 h-[85%]">
+    <div className="flex flex-row-reverse px-[100px] bg-[#FDFBF7] py-16 items-center justify-center gap-x-10 h-[85%]">
       <div className="w-full flex flex-col items-center space-y-10">
         <p className="text-black text-[40px] font-poppins mt-4 font-semibold leading-normal">
           If you’re ready to increase sales and promote your company, then this

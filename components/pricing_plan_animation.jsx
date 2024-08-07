@@ -9,7 +9,7 @@ const PricingPackage = () => {
   const [activeCard, setActiveCard] = useState(1);
 
   return (
-    <div className="py-24 space-y-10 font-poppins bg-[#FDFBF7]">
+    <div className="py-16 space-y-10 font-poppins bg-[#FDFBF7]">
       <div className="w-full flex gap-4 flex-col py-10 items-center">
         <p className="text-xl w-[50%] text-center">
           Use Flair for free with your whole team. Upgrade to enable unlimited

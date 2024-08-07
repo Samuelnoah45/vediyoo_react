@@ -11,7 +11,7 @@ const PricingPackage = () => {
   const numbers = [1, 2, 3, 4, 5];
   return (
     <div>
-      <div className="py-24 space-y-10 px-[300px] font-poppins bg-[#FDFBF7]">
+      <div className="py-12 space-y-10 px-[300px] font-poppins bg-[#FDFBF7]">
         <div className="w-full flex gap-4 flex-col  items-center">
           <p className="text-[40px] font-extrabold text-primary-400">
             What Our Customer are <span className="text-black">Saying🏆</span>

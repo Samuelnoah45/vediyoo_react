@@ -44,7 +44,7 @@ const InfluencersSection = () => {
   const [ActiveCard, setActiveCard] = useState(influencers.length - 1);
 
   return (
-    <div className="py-24 font-poppins bg-[#FDFBF7]">
+    <div className="py-16 font-poppins bg-[#FDFBF7]">
       <div className="w-full flex gap-2 flex-col items-center">
         <p className="text-[40px] font-extrabold">
           Hire Our Brand <span className="text-primary-400">Influencers</span>

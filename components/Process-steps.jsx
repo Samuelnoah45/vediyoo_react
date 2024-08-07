@@ -9,7 +9,7 @@ const ProcessSteps = () => {
   const [activeCard, setActiveCard] = useState(2);
 
   return (
-    <div className="pb-24 space-y-10 font-poppins bg-[#FDFBF7]">
+    <div className="pb-12 space-y-10 font-poppins bg-[#FDFBF7]">
       <div className="w-full flex gap-4 flex-col items-center">
         <p className="text-[40px] font-extrabold">
           How Does It <span className="text-primary-400">Work?</span>

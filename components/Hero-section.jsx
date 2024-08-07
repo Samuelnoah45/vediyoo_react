@@ -1,12 +1,13 @@
-import React from 'react';
-import Link from 'next/link'
-import { Icon } from '@iconify/react';
-import style from '../public/assets/css/Hero.module.css';
+import React from "react";
+import Link from "next/link";
+import { Icon } from "@iconify/react";
+import style from "../public/assets/css/Hero.module.css";
 
 const HeroSection = () => {
   return (
-    <div className={`flex  2xl:px-[200px] px-[80px] items-center justify-center gap-x-10 h-[85%] ${style.bgImage}`}>
-       
+    <div
+      className={`flex  2xl:px-[200px] px-[80px] items-center justify-center gap-x-10 h-[85%] ${style.bgImage}`}
+    >
       <div className="w-full space-y-8">
         <p className="text-black 2xl:text-[65px] text-[56px] font-poppins mt-4 font-extrabold leading-normal">
           Turn Videos Into Millions With Our Editing Magic
@@ -40,7 +41,9 @@ const HeroSection = () => {
             </div>
           </div>
           <div className="space-y-2">
-            <p className="text-xl w-[300px]">Trusted by 4,500+ E-commerce brands</p>
+            <p className="text-xl w-[300px]">
+              Trusted by 4,500+ E-commerce brands
+            </p>
             <div className="flex gap-2">
               {[...Array(5)].map((_, i) => (
                 <Icon
@@ -58,7 +61,6 @@ const HeroSection = () => {
           <img src="/assets/images/mock_video.png" alt="Mock Video" />
         </div>
       </div>
-     
     </div>
   );
 };

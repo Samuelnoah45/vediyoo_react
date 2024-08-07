@@ -1,19 +1,22 @@
-import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
-import { Icon } from '@iconify/react';
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { Icon } from "@iconify/react";
 
 const VideoSection = () => {
   return (
     <div className="flex flex-row-reverse px-[100px] bg-[#FDFBF7] py-24 items-center justify-center gap-x-10 h-[85%]">
       <div className="w-full flex flex-col items-center space-y-10">
         <p className="text-black text-[40px] font-poppins mt-4 font-semibold leading-normal">
-          If you’re ready to increase sales and promote your company, then this is for you!
+          If you’re ready to increase sales and promote your company, then this
+          is for you!
         </p>
 
         <div className="flex w-full gap-10">
           <div className="space-y-2">
-            <p className="text-xl w-[300px]">The #1st Video Service For Your E-commerce</p>
+            <p className="text-xl w-[300px]">
+              The #1st Video Service For Your E-commerce
+            </p>
             <div className="flex gap-2">
               {[...Array(5)].map((_, i) => (
                 <Icon
@@ -26,7 +29,9 @@ const VideoSection = () => {
           </div>
           <div className="w-[1px] bg-[#707070]"></div>
           <div className="space-y-2">
-            <p className="text-xl w-[300px]">Trusted by 4,500+ E-commerce brands</p>
+            <p className="text-xl w-[300px]">
+              Trusted by 4,500+ E-commerce brands
+            </p>
             <div className="flex gap-2">
               {[...Array(5)].map((_, i) => (
                 <Icon
@@ -48,7 +53,12 @@ const VideoSection = () => {
       </div>
       <div className="w-full h-[80%] flex justify-center pt-16">
         <div>
-          <Image src="/assets/images/mock_video.png" alt="mock video" width={500} height={500} />
+          <Image
+            src="/assets/images/mock_video.png"
+            alt="mock video"
+            width={500}
+            height={500}
+          />
         </div>
       </div>
     </div>

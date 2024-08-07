@@ -1,9 +1,9 @@
 "use client";
 
-import React, { useState } from 'react';
-import Link from 'next/link';
-import { Icon } from '@iconify/react';
-import styles from '../public/assets/css/pricing_plan.module.css';
+import React, { useState } from "react";
+import Link from "next/link";
+import { Icon } from "@iconify/react";
+import styles from "../public/assets/css/pricing_plan.module.css";
 
 const PricingPackage = () => {
   const [activeCard, setActiveCard] = useState(1);
@@ -22,7 +22,7 @@ const PricingPackage = () => {
       <div
         onMouseLeave={() => setActiveCard(2)}
         className={`flex p-10 justify-center font-poppins py-10 items-center influencer-card ${
-          activeCard !== 2 ? 'gap-4' : 'gap-0'
+          activeCard !== 2 ? "gap-4" : "gap-0"
         } ${styles.cardMain}`}
       >
         <div
@@ -30,8 +30,8 @@ const PricingPackage = () => {
           onMouseOver={() => setActiveCard(1)}
           className={`rounded-md overflow-clip relative flex justify-center gap-6 flex-col items-center p-14 ${
             activeCard === 1
-              ? 'bg-primary-400 text-white z-50 scale-110 shadow-xl'
-              : 'bg-white text-[#515151] shadow-md'
+              ? "bg-primary-400 text-white z-50 scale-110 shadow-xl"
+              : "bg-white text-[#515151] shadow-md"
           }`}
         >
           <h4 className="text-xl">Basic</h4>
@@ -42,7 +42,10 @@ const PricingPackage = () => {
             <ul className="text-lg flex flex-col gap-3">
               {[...Array(5)].map((_, i) => (
                 <li key={i} className="flex items-center gap-2">
-                  <Icon className="text-2xl" icon="material-symbols:check-box-outline" />
+                  <Icon
+                    className="text-2xl"
+                    icon="material-symbols:check-box-outline"
+                  />
                   7 short video (&lt;1 min)
                 </li>
               ))}
@@ -53,8 +56,8 @@ const PricingPackage = () => {
               <div
                 className={`font-bold text- px-16 py-4 rounded-full font-poppins ${
                   activeCard !== 1
-                    ? 'border-primary-400 border-2'
-                    : 'bg-white text-[#515151]'
+                    ? "border-primary-400 border-2"
+                    : "bg-white text-[#515151]"
                 }`}
               >
                 Get Started
@@ -68,8 +71,8 @@ const PricingPackage = () => {
           onMouseOver={() => setActiveCard(2)}
           className={`rounded-md overflow-clip relative flex gap-6 flex-col items-center p-14 justify-center ${
             activeCard === 2
-              ? 'bg-primary-400 text-white z-50 scale-110 shadow-xl'
-              : 'bg-white text-[#515151] shadow-md'
+              ? "bg-primary-400 text-white z-50 scale-110 shadow-xl"
+              : "bg-white text-[#515151] shadow-md"
           }`}
         >
           <h4 className="text-xl">Premium</h4>
@@ -80,7 +83,10 @@ const PricingPackage = () => {
             <ul className="text-lg flex flex-col gap-3">
               {[...Array(5)].map((_, i) => (
                 <li key={i} className="flex items-center gap-2">
-                  <Icon className="text-2xl" icon="material-symbols:check-box-outline" />
+                  <Icon
+                    className="text-2xl"
+                    icon="material-symbols:check-box-outline"
+                  />
                   7 short video (&lt;1 min)
                 </li>
               ))}
@@ -91,8 +97,8 @@ const PricingPackage = () => {
               <div
                 className={`font-bold text- px-16 py-4 rounded-full font-poppins ${
                   activeCard !== 2
-                    ? 'border-primary-400 border-2'
-                    : 'bg-white text-[#515151]'
+                    ? "border-primary-400 border-2"
+                    : "bg-white text-[#515151]"
                 }`}
               >
                 Get Started
@@ -106,8 +112,8 @@ const PricingPackage = () => {
           onMouseOver={() => setActiveCard(3)}
           className={`rounded-md overflow-clip relative flex gap-6 flex-col items-center p-14 justify-center ${
             activeCard === 3
-              ? 'bg-primary-400 text-white z-50 shadow-xl scale-110'
-              : 'bg-white text-[#515151] shadow-md'
+              ? "bg-primary-400 text-white z-50 shadow-xl scale-110"
+              : "bg-white text-[#515151] shadow-md"
           }`}
         >
           <h4 className="text-xl">Standard</h4>
@@ -118,7 +124,10 @@ const PricingPackage = () => {
             <ul className="text-lg flex flex-col gap-3">
               {[...Array(5)].map((_, i) => (
                 <li key={i} className="flex items-center gap-2">
-                  <Icon className="text-2xl" icon="material-symbols:check-box-outline" />
+                  <Icon
+                    className="text-2xl"
+                    icon="material-symbols:check-box-outline"
+                  />
                   7 short video (&lt;1 min)
                 </li>
               ))}
@@ -129,8 +138,8 @@ const PricingPackage = () => {
               <div
                 className={`font-bold text- px-16 py-4 rounded-full font-poppins ${
                   activeCard !== 3
-                    ? 'border-primary-400 border-2'
-                    : 'bg-white text-[#515151]'
+                    ? "border-primary-400 border-2"
+                    : "bg-white text-[#515151]"
                 }`}
               >
                 Get Started

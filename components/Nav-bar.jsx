@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const NavBar = () => {
   return (
-    <div className="flex items-center justify-between 2xl:px-[200px] px-[80px]  py-8">
+    <div className="flex  gap-4 lg:items-center justify-between  2xl:px-[200px] lg:px-[80px] px-4 lg:flex-row flex-col   py-8">
       <div>
         <img src="/assets/images/Logo.png" alt="Logo" />
       </div>

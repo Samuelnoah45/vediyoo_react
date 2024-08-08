@@ -9,16 +9,16 @@ const ProcessSteps = () => {
   const [activeCard, setActiveCard] = useState(2);
 
   return (
-    <div className="pb-12 space-y-10 font-poppins bg-[#FDFBF7]">
+    <div className="lg:pb-12 space-y-10 font-poppins bg-[#FDFBF7]">
       <div className="w-full flex gap-4 flex-col items-center">
-        <p className="text-[40px] font-extrabold">
+        <p className="lg:text-[40px] text-[30px] font-extrabold">
           How Does It <span className="text-primary-400">Work?</span>
         </p>
         <p className="text-xl">Check Out Our Simple 3-Step Process</p>
       </div>
       <div
         onMouseLeave={() => setActiveCard(2)}
-        className="flex h-[400px] justify-center py-10 gap-4 items-center"
+        className="flex lg:flex-row flex-col lg:h-[400px] justify-center lg:py-10 py-2 gap-4 items-center"
       >
         <div
           onMouseOver={() => setActiveCard(1)}

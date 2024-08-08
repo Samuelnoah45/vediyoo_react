@@ -11,15 +11,15 @@ const PricingPackage = () => {
   const numbers = [1, 2, 3, 4, 5];
   return (
     <div>
-      <div className="py-12 space-y-10 2xl:px-[300px] lg:px-[80px] font-poppins bg-[#FDFBF7]">
+      <div className="py-12 space-y-10 2xl:px-[300px] lg:px-[120px] px-4 font-poppins bg-[#FDFBF7]">
         <div className="w-full flex gap-4 flex-col  items-center">
-          <p className="text-[40px] font-extrabold text-primary-400">
+          <p className="lg:text-[40px] text-[30px] font-extrabold text-primary-400">
             What Our Customer are <span className="text-black">Saying🏆</span>
           </p>
         </div>
         <div
           onMouseLeave={() => setActiveCard(2)}
-          className={`grid grid-cols-3 font-poppins gap-10  influencer-card`}
+          className={`grid lg:grid-cols-3 font-poppins gap-10  influencer-card`}
         >
           {numbers.map((number) => (
             <div className="space-y-8 p-6  bg-[#E5F6FF] mx-auto rounded-md pb-4 font-poppins border-gray-200 ">

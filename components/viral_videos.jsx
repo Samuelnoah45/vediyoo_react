@@ -10,16 +10,16 @@ const PricingPackage = () => {
   const numbers = [1, 2, 3];
   return (
     <div>
-      <div className="py-16 space-y-10 2xl:px-[300px] lg:px-[80px] font-poppins bg-[#FDFBF7]">
+      <div className="lg:py-16 py-4 space-y-10 2xl:px-[300px] lg:px-[150px] px-4 font-poppins bg-[#FDFBF7]">
         <div className="w-full flex gap-4 flex-col  items-center">
-          <p className="text-[40px] font-extrabold">
+          <p className="lg:text-[40px] text-[30px] font-extrabold">
             View Some of Our Viral{" "}
             <span className="text-primary-400">Examples</span>
           </p>
         </div>
         <div
           onMouseLeave={() => setActiveCard(2)}
-          className={`grid grid-cols-3 font-poppins gap-10  influencer-card`}
+          className={`grid lg:grid-cols-3  font-poppins gap-10  influencer-card`}
         >
           {numbers.map((number) => (
             <div className="space-y-4 overflow-hidden border-[1px] rounded-md pb-4 font-poppins border-gray-200 ">

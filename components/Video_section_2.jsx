@@ -5,14 +5,14 @@ import { Icon } from "@iconify/react";
 
 const VideoSection = () => {
   return (
-    <div className="flex flex-row-reverse 2xl:px-[100px] lg:px-[80px] bg-[#FDFBF7] py-8 items-center justify-center gap-x-8 h-[85%]">
+    <div className="flex lg:flex-row-reverse flex-col-reverse 2xl:px-[100px] lg:px-[80px]  bg-[#FDFBF7] px-8 items-center justify-center gap-x-8 h-[85%]">
       <div className="w-full flex flex-col items-center space-y-10">
-        <p className="text-black 2xl:text-[50px] lg:text-[35px] font-poppins mt-4 font-semibold leading-normal">
+        <p className="text-black 2xl:text-[50px] lg:text-[35px] text-[25px]  font-poppins mt-4 font-semibold leading-normal">
           If you’re ready to increase sales and promote your company, then this
           is for you!
         </p>
 
-        <div className="flex mt-8 mr-24">
+        <div className="flex mt-8 lg:mr-24">
           <Link href="/about">
             <div className="bg-primary-400 font-bold text-lg text-white px-16 py-4 rounded-full font-poppins">
               Get Started

@@ -5,16 +5,16 @@ import { Icon } from "@iconify/react";
 
 const VideoSection = () => {
   return (
-    <div className="flex flex-row-reverse px-[100px] bg-[#FDFBF7] py-16 items-center justify-center gap-x-10 h-[85%]">
+    <div className="flex lg:flex-row-reverse   flex-col-reverse lg:px-[100px] px-4 bg-[#FDFBF7] lg:py-16  items-center justify-center gap-x-10 lg:h-[85%]">
       <div className="w-full flex flex-col items-center space-y-10">
-        <p className="text-black text-[40px] font-poppins mt-4 font-semibold leading-normal">
+        <p className="text-black lg:text-[40px] text-[30px] lg:text-left  font-poppins mt-4 font-semibold leading-normal">
           If you’re ready to increase sales and promote your company, then this
           is for you!
         </p>
 
-        <div className="flex w-full gap-10">
+        <div className="flex  w-full lg:gap-10 gap-2">
           <div className="space-y-2">
-            <p className="text-xl w-[300px]">
+            <p className="lg:text-xl lg:w-[300px]">
               The #1st Video Service For Your E-commerce
             </p>
             <div className="flex gap-2">
@@ -27,9 +27,9 @@ const VideoSection = () => {
               ))}
             </div>
           </div>
-          <div className="w-[1px] bg-[#707070]"></div>
+          <div className="lg:w-[1px] w-0 bg-[#707070]"></div>
           <div className="space-y-2">
-            <p className="text-xl w-[300px]">
+            <p className="lg:text-xl lg:w-[300px]">
               Trusted by 4,500+ E-commerce brands
             </p>
             <div className="flex gap-2">
@@ -43,7 +43,7 @@ const VideoSection = () => {
             </div>
           </div>
         </div>
-        <div className="flex mt-8 mr-24">
+        <div className="flex mt-8 lg:mr-24">
           <Link href="/about">
             <div className="bg-primary-400 font-bold text-lg text-white px-16 py-4 rounded-full font-poppins">
               Get Started

@@ -14,7 +14,7 @@ const PricingPackage = () => {
 
   return (
     <div>
-      <div className="py-16 space-y-10 px-[30%] font-poppins bg-[#FDFBF7]">
+      <div className="lg:py-16 py-4 space-y-10 lg:px-[30%] px-4 font-poppins bg-[#FDFBF7]">
         <div className="w-full flex gap-4 flex-col  items-center">
           <p className="text-[40px] font-extrabold">
             <span className="text-primary-400">FAQ</span>

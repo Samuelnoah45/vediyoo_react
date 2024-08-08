@@ -10,22 +10,22 @@ const PricingPackage = () => {
   const numbers = [1, 2, 3, 4];
   return (
     <div>
-      <div className="py-4 space-y-10 font-poppins bg-[#FDFBF7]">
+      <div className="py-4 lg:space-y-10 space-y-4 font-poppins bg-[#FDFBF7]">
         <div className="w-full flex gap-4 flex-col py-10 items-center">
-          <p className="text-xl w-[50%] text-center">
+          <p className="text-xl lg:w-[50%] w-full px-4 text-center">
             Use Flair for free with your whole team. Upgrade to enable unlimited
             issues, enhanced security controls, and additional features.
           </p>
-          <p className="text-[40px] font-extrabold">
+          <p className="lg:text-[40px] text-[30px] font-extrabold">
             Pricing & <span className="text-primary-400">Package</span>
           </p>
         </div>
         <div
           onMouseLeave={() => setActiveCard(2)}
-          className={`flex p-10 gap-8 justify-center flex-wrap  font-poppins py-10 items-center influencer-card`}
+          className={`flex lg:p-10 gap-8 justify-center flex-wrap px-4  font-poppins lg:py-10  items-center influencer-card`}
         >
           {numbers.map((number) => (
-            <div className="rounded-[12px]   relative shadow-md">
+            <div className="rounded-[12px] w-full  lg:w-auto   relative shadow-md">
               <h4
                 className={`text-xl absolute z-10 -top-4 left-[40%] px-4 bg-white  border-2 rounded-md ${
                   activeCard == number

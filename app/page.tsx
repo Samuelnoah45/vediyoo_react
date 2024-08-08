@@ -14,7 +14,7 @@ import FAQ from "../components/FAQ";
 export default function Home() {
   return (
     <div className="">
-      <div className="h-screen bgImage relative">
+      <div className="lg:h-screen bgImage relative">
         <img
           className="absolute bottom-0 opacity-10"
           src="/assets/images/left_shape.svg"

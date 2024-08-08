@@ -10,15 +10,15 @@ const PricingPackage = () => {
 
   return (
     <div>
-      <div className="space-y-10 px-[300px] lg:px-[80px] font-poppins bg-[#FDFBF7]">
+      <div className="space-y-10 2xl:px-[300px] lg:px-[150px] font-poppins px-4 bg-[#FDFBF7]">
         <div className="w-full flex gap-4 flex-col  items-center">
-          <p className="text-[40px] font-extrabold">
+          <p className="lg:text-[40px] text-[30px] font-extrabold">
             Read Our <span className="text-primary-400">Blog</span>
           </p>
         </div>
         <div
           onMouseLeave={() => setActiveCard(2)}
-          className={`grid grid-cols-3 font-poppins gap-10  influencer-card`}
+          className={`grid lg:grid-cols-3 font-poppins gap-10  influencer-card`}
         >
           {numbers.map((number) => (
             <div className="space-y-4 border-[1px] overflow-hidden rounded-md pb-4 font-poppins border-gray-200 ">

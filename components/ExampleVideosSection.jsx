@@ -28,18 +28,32 @@ const ExampleVideos = () => {
         color="secondary"
         // variant="underlined"
         classNames={{
-          tabList: "gap-16 justify-center w-full bg-lily-white-100",
-          tab: "px-0 h-12 text-[#555555]",
+          tabList: "lg:gap-16 flex     bg-lily-white-100",
+          tab: "px-0 h-12 text-[#555555] flex flex-col",
           tabContent:
-            "text-lg font-poppins p-4 group-data-[selected=true]:text-white",
+            "text-lg  font-poppins p-4 group-data-[selected=true]:text-white",
         }}
       >
         <Tab className="w-full" key="Classic Examples" title="Classic Examples">
-          <div className="w-full px-[50px] py-10">
+          <div className="w-full lg:px-[50px] py-10">
             <Swiper
               modules={[Navigation]}
-              spaceBetween={50}
-              slidesPerView={3}
+              spaceBetween={0}
+              slidesPerView={1}
+              breakpoints={{
+                640: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+                768: {
+                  slidesPerView: 3,
+                  spaceBetween: 40,
+                },
+                1024: {
+                  slidesPerView: 3,
+                  spaceBetween: 50,
+                },
+              }}
               navigation
               onSwiper={(swiper) => console.log(swiper)}
               onSlideChange={() => console.log("slide change")}
@@ -84,57 +98,11 @@ const ExampleVideos = () => {
             </Swiper>
           </div>
         </Tab>
-        <Tab key="TikTok Ad Examples" title="TikTok Ad Examples">
-          <div className="w-full px-[50px] py-10">
-            <Swiper
-              modules={[Navigation]}
-              spaceBetween={50}
-              slidesPerView={3}
-              navigation
-              onSwiper={(swiper) => console.log(swiper)}
-              onSlideChange={() => console.log("slide change")}
-              className=""
-            >
-              <SwiperSlide>
-                <img
-                  className="rounded-md"
-                  src="/assets/images/video_two.png"
-                  alt=""
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img
-                  className="rounded-md"
-                  src="/assets/images/video_one.png"
-                  alt=""
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img
-                  className="rounded-md"
-                  src="/assets/images/video_two.png"
-                  alt=""
-                />
-              </SwiperSlide>
-              <SwiperSlide>
-                <img
-                  className="rounded-md"
-                  src="/assets/images/video_three.png"
-                  alt=""
-                />
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <img
-                  className="rounded-md"
-                  src="/assets/images/video_two.png"
-                  alt=""
-                />
-              </SwiperSlide>
-            </Swiper>
-          </div>
-        </Tab>
-        <Tab key="Vertical Ad Examples" title="Vertical Ad Examples">
+        <Tab
+          className="w-full"
+          key="TikTok Ad Examples"
+          title="TikTok Ad Examples"
+        >
           <div className="w-full px-[50px] py-10">
             <Swiper
               modules={[Navigation]}
@@ -185,6 +153,61 @@ const ExampleVideos = () => {
           </div>
         </Tab>
         <Tab
+          className="w-full"
+          key="Vertical Ad Examples"
+          title="Vertical Ad Examples"
+        >
+          <div className="w-full px-[50px] py-10">
+            <Swiper
+              modules={[Navigation]}
+              spaceBetween={50}
+              slidesPerView={3}
+              navigation
+              onSwiper={(swiper) => console.log(swiper)}
+              onSlideChange={() => console.log("slide change")}
+              className=""
+            >
+              <SwiperSlide>
+                <img
+                  className="rounded-md"
+                  src="/assets/images/video_two.png"
+                  alt=""
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  className="rounded-md"
+                  src="/assets/images/video_one.png"
+                  alt=""
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  className="rounded-md"
+                  src="/assets/images/video_two.png"
+                  alt=""
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img
+                  className="rounded-md"
+                  src="/assets/images/video_three.png"
+                  alt=""
+                />
+              </SwiperSlide>
+
+              <SwiperSlide>
+                <img
+                  className="rounded-md"
+                  src="/assets/images/video_two.png"
+                  alt=""
+                />
+              </SwiperSlide>
+            </Swiper>
+          </div>
+        </Tab>
+        <Tab
+          className="w-full"
           key="User Generated Ad Examples"
           title="User Generated Ad Examples"
         >

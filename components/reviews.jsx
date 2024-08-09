@@ -5,9 +5,45 @@ import Link from "next/link";
 import { Icon } from "@iconify/react";
 import styles from "../public/assets/css/pricing_plan.module.css";
 import { Avatar } from "@nextui-org/react";
+import Infinite from "../components/ui/infinite-moving-cards";
 
 const PricingPackage = () => {
-  const [activeCard, setActiveCard] = useState(2);
+  const items = [
+    {
+      quote: "The only way to do great work is to love what you do.",
+      name: "Steve Jobs",
+      title: "Co-founder, Apple Inc.",
+    },
+    {
+      quote:
+        "Success is not final; failure is not fatal: It is the courage to continue that counts.",
+      name: "Winston Churchill",
+      title: "Former Prime Minister, United Kingdom",
+    },
+    {
+      quote: "It always seems impossible until it's done.",
+      name: "Nelson Mandela",
+      title: "Former President, South Africa",
+    },
+    {
+      quote: "You miss 100% of the shots you don't take.",
+      name: "Wayne Gretzky",
+      title: "Professional Ice Hockey Player",
+    },
+    {
+      quote:
+        "In the end, we will remember not the words of our enemies, but the silence of our friends.",
+      name: "Martin Luther King Jr.",
+      title: "Civil Rights Leader",
+    },
+    {
+      quote:
+        "The greatest glory in living lies not in never falling, but in rising every time we fall.",
+      name: "Nelson Mandela",
+      title: "Former President, South Africa",
+    },
+  ];
+
   const numbers = [1, 2, 3, 4, 5];
   return (
     <div>
@@ -16,6 +52,9 @@ const PricingPackage = () => {
           <p className="lg:text-[40px] text-[30px] font-extrabold text-primary-400">
             What Our Customer are <span className="text-black">Saying🏆</span>
           </p>
+        </div>
+        <div className="w-full">
+          {/* <Infinite className="w-full" items={items} /> */}
         </div>
         <div
           onMouseLeave={() => setActiveCard(2)}

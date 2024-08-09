@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.scroll {
+  white-space: nowrap;
+  margin: 0 2em;
+}
+
+.scroll div {
+  display: flex;
+  gap: 2em;
+}
+
+.scroll p {
+  font-size: 5em;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 0;
+  line-height: 10px;
+}
+
+.RightToLeft {
+  animation: RightToLeft 10s infinite linear;
+  color: black; /* Initial color */
+}
+
+.RightToLeft:hover {
+  animation-play-state: paused; /* Pauses the animation on hover */
+  color: red; /* Change the color on hover */
+}
+
+@keyframes RightToLeft {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.fadeLeft {
+  background: linear-gradient(to right, transparent 0%, #ffffff 100%);
+
+  @apply space-y-2;
+  transition: height 500ms ease-in-out;
+}
+.fadeRight {
+  background: linear-gradient(to left, transparent 0%, #ffffff 100%);
+
+  @apply space-y-2;
+  transition: height 500ms ease-in-out;
+}

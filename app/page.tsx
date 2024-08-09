@@ -11,6 +11,7 @@ import ViralVideos from "../components/viral_videos";
 import Reviews from "../components/reviews";
 import Blogs from "../components/Blogs";
 import FAQ from "../components/FAQ";
+import Footer from "../components/footer";
 export default function Home() {
   return (
     <div className="">
@@ -49,6 +50,7 @@ export default function Home() {
       <Blogs />
       <FAQ />
       <VideoSection2 />
+      <Footer />
     </div>
   );
 }

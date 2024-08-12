@@ -36,7 +36,7 @@ const ExampleVideos = () => {
   return (
     <div className="flex w-full items-center flex-col py-4 2xl:px-[200px] lg:px-[80px] px-4  font-poppins bg-[#FDFBF7]">
       <div className="w-full flex gap-4 flex-col lg:py-16 py-8 items-center">
-        <p className="text-[40px] font-extrabold">
+        <p className="lg:text-[40px] text-[30px] font-extrabold">
           Example <span className="text-primary-400">Videos </span>
         </p>
         <p className="text-xl">Check Out Some of Our Examples </p>

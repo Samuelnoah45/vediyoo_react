@@ -7,13 +7,13 @@ import styles from "../public/assets/css/footer.module.css";
 import Marquee from "react-fast-marquee";
 const Footer = () => {
   return (
-    <div className="grid lg:grid-cols-2 place-content-center  gap-4 lg:py-24 py-6 px-4 lg:gap-24 relative ">
+    <div className="grid lg:grid-cols-2 place-content-center  gap-4 2xl:py-24 lg:py-16 py-6 px-4 lg:gap-24 relative ">
       <div className={`${styles.container} relative`}>
         <div
           className={`absolute top-0 left-0 h-full z-50 xl:w-[400px] ${styles.fadeRight}`}
         ></div>
-        <Marquee pauseOnHover={true}>
-          <p className="lg:text-[60px] text-[45px] font-poppins font-extrabold">
+        <Marquee className="hover:text-primary-400">
+          <p className="lg:text-[60px]   text-[45px] font-poppins font-extrabold">
             I can be a React component, multiple React components, or just some
             text.
           </p>
@@ -23,7 +23,7 @@ const Footer = () => {
         ></div>
       </div>
       <div>
-        <div className="font-poppins lg:w-[70%]  space-y-4">
+        <div className="font-poppins 2xl:w-[70%] w-[90%]  space-y-4">
           <p className="text-xl font-extrabold ">
             {" "}
             Get 20% off you next purchase

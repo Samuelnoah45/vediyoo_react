@@ -24,7 +24,7 @@ export default function Home() {
           alt=""
         /> */}
         <Icon
-          className={`absolute lg:block hidden 2xl:top-[40%] top-[52%] left-[100px] 2xl:text-[60px] text-[50px] ${styles.gradientText}`}
+          className={`absolute lg:block hidden 2xl:top-[40%] top-[52%] 2xl:left-[100px] left-[20px] 2xl:text-[60px] text-[50px] ${styles.gradientText}`}
           icon="fluent:radio-button-24-regular"
         ></Icon>
         <img
@@ -34,7 +34,7 @@ export default function Home() {
         />
         {/* <img src="/assets/images/radio_shape.svg" alt="" /> */}
         <Icon
-          className={`absolute lg:block hidden top-[150px] 2xl:left-[40%] left-[45%] 2xl:text-[60px] text-[50px] ${styles.gradientText}`}
+          className={`absolute lg:block hidden 2xl:top-[150px] top-[120px] 2xl:left-[40%] left-[40%] 2xl:text-[60px] text-[50px] ${styles.gradientText}`}
           icon="ph:radio-button-fill"
         ></Icon>
         <NavBar />

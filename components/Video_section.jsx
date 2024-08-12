@@ -5,16 +5,31 @@ import { Icon } from "@iconify/react";
 
 const VideoSection = () => {
   return (
-    <div className="flex lg:flex-row-reverse   flex-col-reverse lg:px-[100px] px-4 bg-[#FDFBF7] lg:py-16  items-center justify-center gap-x-10 lg:h-[85%]">
+    <div className="grid lg:grid-cols-2 lg:px-[100px] px-4 bg-[rgb(253,251,247)] lg:py-16   gap-x-10 lg:h-[85%]">
+      <div className="w-full lg:h-[80%]  h-[225px]  flex justify-center">
+        <div className="flex-shrink-0  w-full  flex justify-center">
+          <div className="rounded-3xl   w-full">
+            <iframe
+              src="https://player.vimeo.com/video/919511515?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&autoplay=1&loop=1"
+              frameborder="0"
+              allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+              title="Dog -1"
+              class="w-full overflow-hidden  h-full lg:rounded-3xl rounded-md"
+            ></iframe>
+
+            <script src="https://player.vimeo.com/api/player.js"></script>
+          </div>
+        </div>
+      </div>
       <div className="w-full flex flex-col items-center space-y-10">
-        <p className="text-black lg:text-[40px] text-[30px] lg:text-left  font-poppins mt-4 font-semibold leading-normal">
+        <p className="text-black 2xl:text-[40px] text-[26px] lg:text-[33px] lg:text-left  font-poppins mt-4 font-semibold leading-normal">
           If you’re ready to increase sales and promote your company, then this
           is for you!
         </p>
 
-        <div className="flex  w-full lg:gap-10 gap-2">
+        <div className="flex w-full lg:gap-10 gap-2">
           <div className="space-y-2">
-            <p className="lg:text-xl lg:w-[300px]">
+            <p className="lg:text-xl 2xl:w-[300px]">
               The #1st Video Service For Your E-commerce
             </p>
             <div className="flex gap-2">
@@ -29,7 +44,7 @@ const VideoSection = () => {
           </div>
           <div className="lg:w-[1px] w-0 bg-[#707070]"></div>
           <div className="space-y-2">
-            <p className="lg:text-xl lg:w-[300px]">
+            <p className="lg:text-xl 2xl:w-[300px]">
               Trusted by 4,500+ E-commerce brands
             </p>
             <div className="flex gap-2">
@@ -49,16 +64,6 @@ const VideoSection = () => {
               Get Started
             </div>
           </Link>
-        </div>
-      </div>
-      <div className="w-full h-[80%] flex justify-center pt-16">
-        <div>
-          <Image
-            src="/assets/images/mock_video.png"
-            alt="mock video"
-            width={500}
-            height={500}
-          />
         </div>
       </div>
     </div>

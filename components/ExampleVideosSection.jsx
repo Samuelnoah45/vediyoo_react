@@ -34,7 +34,7 @@ const ExampleVideos = () => {
   }, []);
 
   return (
-    <div className="flex w-full items-center flex-col py-4 2xl:px-[200px] lg:px-[150px] px-4  font-poppins bg-[#FDFBF7]">
+    <div className="flex w-full items-center flex-col py-4 2xl:px-[200px] lg:px-[80px] px-4  font-poppins bg-[#FDFBF7]">
       <div className="w-full flex gap-4 flex-col lg:py-16 py-8 items-center">
         <p className="text-[40px] font-extrabold">
           Example <span className="text-primary-400">Videos </span>
@@ -45,7 +45,7 @@ const ExampleVideos = () => {
         <TabGroup>
           <TabList
             className={
-              "grid lg:grid-cols-4  lg:bg-lily-white-100  gap-2 font-poppins font-bold text-lg"
+              "grid lg:grid-cols-4  lg:bg-lily-white-100  gap-2 font-poppins font-bold 2xl:text-lg"
             }
           >
             <Tab className="data-[selected]:bg-primary-400 p-4 rounded-md data-[selected]:text-white  cursor-pointer">

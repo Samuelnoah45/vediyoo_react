@@ -48,16 +48,16 @@ const ExampleVideos = () => {
               "grid lg:grid-cols-4  lg:bg-lily-white-100  gap-2 font-poppins font-bold 2xl:text-lg"
             }
           >
-            <Tab className="data-[selected]:bg-primary-400 p-4 rounded-md data-[selected]:text-white  cursor-pointer">
+            <Tab className="data-[selected]:bg-primary-400 p-4  data-[selected]:text-white border-0 cursor-pointer">
               Classic Examples
             </Tab>
-            <Tab className="data-[selected]:bg-primary-400 p-4 rounded-md data-[selected]:text-white  cursor-pointer">
+            <Tab className="data-[selected]:bg-primary-400 p-4  data-[selected]:text-white  cursor-pointer">
               TikTok Ad Examples
             </Tab>
-            <Tab className="data-[selected]:bg-primary-400 p-4 rounded-md data-[selected]:text-white  cursor-pointer">
+            <Tab className="data-[selected]:bg-primary-400 p-4  data-[selected]:text-white  cursor-pointer">
               Vertical Ad Examples
             </Tab>
-            <Tab className="data-[selected]:bg-primary-400 p-4 rounded-md data-[selected]:text-white  cursor-pointer">
+            <Tab className="data-[selected]:bg-primary-400 p-4  data-[selected]:text-white  cursor-pointer">
               User Generated Ad Examples
             </Tab>
           </TabList>

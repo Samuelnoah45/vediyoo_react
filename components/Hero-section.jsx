@@ -56,7 +56,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      <div className="flex-shrink-0 w-full   2xl:h-[77%] h-[225px]  flex justify-center lg:pt-16">
+      <div className="flex-shrink-0 w-full   lg:h-[77%] h-[225px]   flex justify-center lg:pt-16">
         <div className="rounded-3xl overflow-hidden w-full">
           <iframe
             src="https://player.vimeo.com/video/919511515?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&autoplay=1&loop=1"

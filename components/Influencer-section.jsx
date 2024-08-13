@@ -41,7 +41,7 @@ const InfluencersSection = () => {
       imgSrc: sampleFour,
     },
   ];
-  const [ActiveCard, setActiveCard] = useState(influencers.length - 1);
+  const [ActiveCard, setActiveCard] = useState(100);
 
   return (
     <div className="lg:py-16 py-8 font-poppins 2xl:px-[200px] lg:px-[80px] px-4 bg-[#FDFBF7]">

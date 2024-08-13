@@ -27,11 +27,19 @@ const PricingPackage = () => {
                 src="/assets/images/blogs.png"
                 alt=""
               />
-
-              <p className="px-4">
+              <p className="px-4 font-extrabold text-xl underline">
+                We’ll help your products sell with our proven direct response
+                video creatives with
+              </p>
+              <p className="px-4">April 12 2024</p>
+              <p className="px-4 leading-relaxed line-clamp-5">
                 We’ll help your products sell with our proven direct response
                 video creatives with our proven direct response video creatives
-                with our proven direct response video creatives
+                with our proven direct response video creatives Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit. Facere saepe
+                sapiente rerum non aliquam, est molestias blanditiis mollitia
+                ipsam architecto, consectetur ex officia vitae ipsum sunt earum
+                consequatur repudiandae culpa!
               </p>
             </div>
           ))}
